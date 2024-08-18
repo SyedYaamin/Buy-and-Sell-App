@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <div class="navbar bg-base-100 bg-blue-500">
+            <div class="flex-1">
+                <a class="btn btn-ghost text-2xl text-white">Signup</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="text-3xl text-center mt-28 font-bold">Registration</h1>
+        <div class="flex justify-center align-center mt-[20px]">
+            <form id="form" action="">
+                <div class="border-2 rounded-2xl bg-slate-200 max-w-4xl py-[30px] px-[50px]">
+                    <input id="first-name" class="w-96 h-12 mt-5 rounded-lg px-[10px]" type="text" placeholder="First Name"
+                        class="input input-bordered w-full max-w-xs" /><br>
+                    <input id="last-name" class="w-96 h-12 mt-5 rounded-lg px-[10px]" type="text" placeholder="Last Name"
+                        class="input input-bordered w-full max-w-xs" /><br>
+                    <input id="email" class="w-96 h-12 mt-5 rounded-lg px-[10px]" type="text" placeholder="Email"
+                        class="input input-bordered w-full max-w-xs" /><br>
+                    <input id="password" class="w-96 h-12 mt-5 rounded-lg px-[10px]" type="text" placeholder="Password"
+                        class="input input-bordered w-full max-w-xs" /><br>
+                    <div class="flex justify-center align-center">
+                        <button class="btn bg-blue-500 mt-5 w-32 text-white">Register</button>
+                    </div>
+                    <div class="flex justify-center align-center mt-3">
+                        <a class="text-center text-blue-500" href="./index.html">ALREADY A USER? PLEASE LOGIN</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+
+    <script src="https://kit.fontawesome.com/2c0d8544db.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="./signup.js"></script>
+</body>
+
+</html>

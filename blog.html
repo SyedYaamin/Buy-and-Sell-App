@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy-Sell</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <div class="navbar bg-base-100 bg-blue-500">
+            <div class="flex-1">
+                <a class="btn btn-ghost text-3xl text-white font-extralight">Buy/ Sell Corner</a>
+            </div>
+            <div class="px-[10px]">
+                <ul class="menu menu-horizontal px-1 text-xl text-white">
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Services</a></li>
+                    <li><a href="./blog.html">Blogs</a></li>
+                </ul>
+            </div>
+            <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                    <div class="w-10 rounded-full">
+                        <img alt="Tailwind CSS Navbar component"
+                            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                    </div>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <li>
+                        <a class="justify-between">
+                            Profile
+                            <span class="badge">New</span>
+                        </a>
+                    </li>
+                    <li><a>Settings</a></li>
+                    <li id="logout-btn"><a>Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="mx-[60px] my-[70px]">
+            <h1 class="text-center text-5xl font-bold">Post AD</h1>
+        </div>
+        <form id="form" action="">
+            <div class="mx-[60px] my-[70px]">
+                <div class="bg-blue-500 mt-[30px] py-[80px] mx-[80px]">
+                    <div class="flex justify-center align-center">
+                        <div id="" class=" border-8 border-white rounded-2xl w-32 h-32">
+                            <input type="file" class="hidden" id="image-input">
+                            <label for="image-input"
+                                class="cursor-pointer flex justify-center align-center text-white text-center text-8xl">+</label>
+                        </div>
+                    </div>
+                    <h1 class="text-center text-white text-5xl font-medium mt-[20px]">Upload Product Photo</h1>
+                </div>
+            </div>
+            <div class="mx-[140px] my-[70px]">
+                <input id="product-title" type="text" placeholder="Product Title"
+                    class="input input-bordered w-full h-16 my-[20px]" /><br>
+                <input id="product-description" type="text" placeholder="Product Description"
+                    class="input input-bordered w-full h-16 my-[20px]" /><br>
+                <input id="product-price" type="text" placeholder="Enter Price"
+                    class="input input-bordered w-full h-16 my-[20px]" /><br>
+                <input id="person-name" type="text" placeholder="Enter Your Name"
+                    class="input input-bordered w-full h-16 my-[20px]" /><br>
+                <input id="person-number" type="text" placeholder="Enter Your Number"
+                    class="input input-bordered w-full h-16 my-[20px]" /><br>
+                <div class="flex justify-end">
+                    <button id="post-btn" class="btn btn-primary text-center text-white text-xl my-[10px]">Post
+                        Now</button>
+                </div>
+        </form>
+        </div>
+    </main>
+
+
+    <script src="https://kit.fontawesome.com/2c0d8544db.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="./blog.js"></script>
+</body>
+
+</html>
